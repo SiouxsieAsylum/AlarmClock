@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+	<title>Alarm Clock</title>
+
+</head>
+<body onload="timePrint()">
+
+<h1>Andrea's Alarm Clock<div id="blinker"></div></h1>
+
+	<div id="clockside">
+		<button class="top-button" id = "snooze" type="button" onclick="shutUp()">SNOOZE</button>
+		<button class="top-button" id = "dismiss" type="button" onclick="dismissAlarm()">DISMISS</button>
+	</div>
+<div id = "clockDisplay">
+
+	<div class="times" id="displayHours" ></div>
+	<div class="times" id="displayMinutes"></div>
+	<div class="times" id="displaySeconds"></div>
+
+	<div id = "arrow-buttons-container">
+		<button class="arrow-buttons" id="hours-up" type="button" onclick="hourUpFunction()"></button>
+		<p id = "hour">Hour</p>
+		<button class="arrow-buttons" id = "hours-down" type="button" onclick="hourDownFunction()"></button>
+		<button class="arrow-buttons" id = "minutes-up" type="button" onclick="minuteUpFunction()"></button>
+		<p id = "minute">Minute</p>
+		<button class="arrow-buttons" id = "minutes-down" type="button" onclick="minuteDownFunction()"></button>
+	</div>
+
+	<div id = "round-buttons-container">
+		<button class="round-button" id = "set-time" type="button" onclick="setTimeFunction()">set time</button>
+		<button class="round-button" id = "set-alarm" type="button" onclick="setAlarmFunction()">alarm</button>
+		<button class="round-button" id = "reset" type="button" onclick="reset()">reset</button>
+		<button class="round-button" id = "hourFormat" type="button" onclick="hourFormat()">time</button>
+	</div>
+</div>
+
+
+	
+	
+	
+
+	<audio id="alarm" src="Mr-Blue-Sky.mp3"></audio>
+
+<script type="text/javascript" src="timeScript.js"></script>
+</body>
+</html>
